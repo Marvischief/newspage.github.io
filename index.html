@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="head">
+      <header>
+        <img src="img/logo.svg" alt="" />
+      </header>
+      <nav>
+        <ul id="navbar" class="hidden">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">New</a>
+          </li>
+          <li>
+            <a href="#">Popular</a>
+          </li>
+          <li>
+            <a href="#">Trending</a>
+          </li>
+          <li>
+            <a href="#">Categories</a>
+          </li>
+        </ul>
+        <div id="menu-icon" class="hide-menu">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g>
+            </svg>
+          </a>
+          <div class="main-menu">
+            <a href="#" class="maina">Home</a>
+            <a href="#" class="maina">New</a>
+            <a href="#" class="maina">Popular</a>
+            <a href="#" class="maina">Trending</a>
+            <a href="#" class="maina">Categories</a>
+          </div>
+          
+        </div>
+        <div id="content-area" class="hide-nav">
+          <span onclick="openNav()">
+            <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#00001A" fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+              <path d="M0 0h40v3H0z" />
+              </g>
+            </svg>
+          </span>
+        </div>
+      </nav>
+      
+    </div>
+
+    <!-- main -->
+    <main>
+      <!-- first section of news page-->
+      <section>
+        <!-- for the 70% news page-->
+        <div>
+          <img src="img/image-web-3-desktop.jpg" alt="" class="section-img" />
+        </div>
+        <div class="second">
+          <h1 class="secondtext">The Bright Future of Web 3.0?</h1>
+          <div class="seconddiv">
+            <p>
+              We dive into an evolution of the web that claims to put the power
+              of the platforms back into the hands of the people. But is it
+              really fulfilling its promise?
+            </p>
+            <button>READ MORE</button>
+          </div>
+        </div>
+      </section>
+      <article>
+        <!-- for the 30% news page-->
+        <div class="articlediv">
+          <marquee behavior="alternate" direction=""
+            ><h1 class="articletext">New</h1></marquee
+          >
+
+          <h2 class="articleh2">Hydrogen Vs Electric Cars</h2>
+          <p class="articlep">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+
+          <hr />
+
+          <h2 class="articleh2">The Downsides of AI Artistry</h2>
+          <p class="articlep">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+
+          <hr />
+
+          <h2 class="articleh2">Is VC Funding Drying Up?</h2>
+          <p class="articlep">
+            Private Funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </article>
+      <!-- first section ends here-->
+
+      <!--Last section of news page-->
+      <div></div>
+    </main>
+
+    <footer>
+      <section class="sec1">
+        <div>
+          <img src="img/image-retro-pcs.jpg" alt="" class="sec1-img" />
+        </div>
+        <div class="footer2nd">
+          <h1 class="footerh1">01</h1>
+          <h2 class="footerh2">Reviving Retro PCs</h2>
+          <p class="footerp">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </section>
+      <section class="sec2">
+        <div>
+          <img src="img/image-top-laptops.jpg" alt="" class="sec1-img" />
+        </div>
+        <div class="footer2nd">
+          <h1 class="footerh1">02</h1>
+          <h2 class="footerh2">Top 10 Laptops 2023</h2>
+          <p class="footerp">Our best picks for various needs and budgets.</p>
+        </div>
+      </section>
+      <section class="sec3">
+        <div>
+          <img src="img/image-gaming-growth.jpg" alt="" class="sec1-img" />
+        </div>
+        <div class="footer2nd">
+          <h1 class="footerh1">03</h1>
+          <h2 class="footerh2">The Growth of Gaming</h2>
+          <p class="footerp">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
